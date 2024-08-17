@@ -26,6 +26,7 @@ a {
     position: sticky;
     background-color: black;
     width: 1200px;
+    z-index: 1;
  }
 
  header img {
