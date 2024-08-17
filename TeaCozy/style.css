@@ -1,0 +1,35 @@
+/* Universal Section */
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+a {
+    color: seashell;
+}
+
+.container {
+    display: flex;
+}
+
+
+/* Header Section */
+
+ header {
+    padding: 69px 0 0 10px;
+    border-bottom: 1 px solid seashell;
+    position: sticky;
+ }
+
+ header img {
+    height: 50px;
+ }
+
+ nav a {
+    text-decoration: underline;
+ }
