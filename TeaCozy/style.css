@@ -23,10 +23,9 @@ a {
  header {
     padding: 69px 0 0 10px;
     border-bottom: 1 px solid seashell;
-    position: sticky;
+    position: fixed;
     background-color: black;
     width: 1200px;
-    z-index: 1;
  }
 
  header img {
