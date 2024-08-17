@@ -24,6 +24,7 @@ a {
     padding: 69px 0 0 10px;
     border-bottom: 1px solid seashell;
     position: fixed;
+    background-color: black;
  }
 
  header img {
