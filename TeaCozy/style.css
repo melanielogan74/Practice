@@ -15,6 +15,7 @@ a {
 
 .container {
     display: flex;
+    background-color: black;
 }
 
 
