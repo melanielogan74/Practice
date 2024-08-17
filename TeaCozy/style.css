@@ -26,6 +26,7 @@ a {
     position: fixed;
     background-color: black;
     width: 1200px;
+    align-items: center;
  }
 
  header img {
