@@ -80,9 +80,13 @@ h1, h2, h3, h4 {
  #featured {
     width: 1000px;
     padding-top: 69px;
+    margin: auto;
  }
 
- 
+ .item {
+    display: block;
+ }
+
  .item img {
     height: 200px;
     width:300px;
