@@ -114,6 +114,7 @@ h1, h2, h3, h4 {
     padding-top: 69px;
     background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
  }
 
  #locations .flex-container {
