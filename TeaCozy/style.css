@@ -25,9 +25,9 @@ a {
     width: 100%;
     /*padding: 69px 0 0 0; */
     border-bottom: 1px solid seashell;
-    position: fixed;
+    position: sticky;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
  }
 
  header img {
