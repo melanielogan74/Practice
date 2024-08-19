@@ -89,9 +89,8 @@ h1, h2, h3, h4 {
  .item {
     padding: 5px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
+    align-content: center;
  }
 
  .item img {
