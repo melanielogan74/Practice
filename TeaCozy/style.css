@@ -23,7 +23,7 @@ a {
 
  header {
     width: 100%;
-    padding: 69px 0 0 0;
+    /*padding: 69px 0 0 0; */
     border-bottom: 1px solid seashell;
     position: fixed;
     align-items: center;
@@ -45,11 +45,19 @@ a {
     padding: 0 25px 0 25px;
  }
 
+ 
+ /* Main Section */
+ main {
+    padding-top: 69px;
+    width: 1200px;
+    margin: auto;
+ }
+ 
+ 
  /* Mission Section */
 
  #mission {
     height: 700px;
     padding-top: 70px;
     background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
-    align-items: center;
  }
