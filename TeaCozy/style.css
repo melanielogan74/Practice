@@ -93,11 +93,11 @@ h1, h2, h3, h4 {
  .item img {
     height: 200px;
     width:300px;
-    display: block;
+    display: inline-block;
     margin: 10px;
  }
 
  .item span {
     text-align: center;
-    display: block;
+    display: inline-block;
  }
