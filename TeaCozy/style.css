@@ -82,11 +82,8 @@ h1, h2, h3, h4 {
     padding-top: 69px;
  }
 
- #featured img {
-    height: 200px;
-    width:300px;
- }
-
  .item {
     text-align: center;
+    height: 200px;
+    width:300px;
  }
