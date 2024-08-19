@@ -106,7 +106,8 @@ h1, h2, h3, h4 {
 
  #locations {
     height: 500px;
-    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg")
+    padding-top: 70px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
  }
 
  .store-location {
