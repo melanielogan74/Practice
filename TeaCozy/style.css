@@ -61,3 +61,8 @@ a {
     padding-top: 70px;
     background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
  }
+
+ #mission .content {
+    background-color: black;
+    margin: auto;
+ }
