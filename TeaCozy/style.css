@@ -32,9 +32,10 @@ h1, h2, h3, h4 {
     /*padding: 69px 0 0 0; */
     border-bottom: 1px solid seashell;
     position: fixed;
+    z-index: 1;
     align-items: center;
     background-color: black;
-    z-index: 1;
+   
  }
 
  header img {
