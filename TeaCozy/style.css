@@ -147,5 +147,8 @@ h1, h2, h3, h4 {
  footer {
     margin: 20px;
     font-size: 12px;
-    text-align: left;
+ }
+
+ footer p {
+   text-align: left;
  }
