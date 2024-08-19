@@ -43,3 +43,11 @@ a {
     text-decoration: underline;
     padding: 0 25px 0 25px;
  }
+
+ /* Mission Section */
+
+ #mission {
+    height: 700px;
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
+    align-items: center;
+ }
