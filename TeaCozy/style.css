@@ -93,11 +93,28 @@ h1, h2, h3, h4 {
  .item img {
     height: 200px;
     width:300px;
-    display: inline-block;
+    display: block;
     margin: 10px;
  }
 
  .item span {
     text-align: center;
-    display: inline-block;
+    display: block;
+ }
+
+ /* Location Section */
+
+ #locations {
+    height: 500px;
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg")
+ }
+
+ .store-location {
+    width: 300px;
+    height: 300px;
+    padding: 40px;
+    opacity: 1;
+    background-color: black;
+    text-align: center;
+    display: block;
  }
