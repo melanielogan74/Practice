@@ -133,3 +133,19 @@ h1, h2, h3, h4 {
     justify-content: center;
     
  }
+
+ /* Footer Section */
+
+ footer {
+    height: 200px;
+ }
+
+ footer p {
+    text-align: center;
+    font-size:20px;
+ }
+
+ .copyright {
+    margin: 20px;
+    font-size: 14px;
+ }
