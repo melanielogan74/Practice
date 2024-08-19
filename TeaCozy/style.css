@@ -83,15 +83,13 @@ h1, h2, h3, h4 {
     margin: auto;
  }
 
- .item {
-    display: block;
- }
-
  .item img {
     height: 200px;
     width:300px;
+    display: block;
  }
 
  .item p {
     text-align: center;
+    display: block;
  }
