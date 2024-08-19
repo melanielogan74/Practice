@@ -106,9 +106,7 @@ h1, h2, h3, h4 {
 
  #locations {
     height: 500px;
-    width: 1000px;
     padding-top: 69px;
-    margin: auto;
     background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
  }
 
@@ -119,5 +117,5 @@ h1, h2, h3, h4 {
     opacity: 1;
     background-color: black;
     text-align: center;
-    display: block;
+    display: flex;
  }
