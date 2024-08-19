@@ -94,14 +94,14 @@ h1, h2, h3, h4 {
     height: 200px;
     width:300px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     margin: 10px;
  }
 
  .item span {
     text-align: center;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
  }
 
  /* Location Section */
