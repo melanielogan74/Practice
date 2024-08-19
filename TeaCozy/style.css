@@ -88,8 +88,9 @@ h1, h2, h3, h4 {
 
  .item {
     padding: 5px;
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
  .item img {
