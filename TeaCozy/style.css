@@ -27,6 +27,7 @@ a {
     border-bottom: 1px solid seashell;
     position: fixed;
     align-items: center;
+    z-index: 1;
  }
 
  header img {
