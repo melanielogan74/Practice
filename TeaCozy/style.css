@@ -105,10 +105,19 @@ h1, h2, h3, h4 {
 
  /* Location Section */
 
+.flex-container locations {
+    padding-top: 5px;
+}
+
  #locations {
     height: 500px;
     padding-top: 69px;
     background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+ }
+
+ #locations .flex-container {
+    margin: auto;
+    width: 1100px;
  }
 
  .store-location {
