@@ -1,0 +1,42 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Universal Section */
+
+body {
+ font-family: Helvetica, sans-serif;
+ font-size: 22px;
+ color: seashell;
+ background-color: black;
+ opacity: 0.9;  
+ text-align: center;
+}
+
+a {
+    color: seashell;
+}
+
+h1, h2, h3, h4 {
+    color: seashell;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+}
+
+.container header {
+    justify-content: space-between;
+}
+
+.nav a
+{
+    text-decoration: underline;
+    padding: 10px;
+
+}
