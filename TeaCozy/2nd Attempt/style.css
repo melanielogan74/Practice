@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5 {
   flex-wrap: wrap;
 }
 
-header .container {
+header {
     margin: 69px 0 0 10px;
     background-color: black;
     position: fixed;
