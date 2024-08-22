@@ -43,6 +43,7 @@ header {
     position: fixed;
     align-items: center;
     z-index: 1;
+    border-bottom: 1px solid seashell;
    
    
 }
@@ -70,7 +71,22 @@ header img {
    
 }
 
-main {
-  padding-top: 100px;
+/* Mission Section */
+
+.mission-banner {
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  position: absolute;
+  background-color: black;
 }
 
+#mission img {
+  padding: 69px 0 0 0;
+  height:700px;
+  width: 1200px;
+}
+
+#mission h2 {
+  padding-bottom: 20px;
+}
