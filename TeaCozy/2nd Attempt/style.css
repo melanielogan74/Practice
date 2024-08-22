@@ -51,4 +51,5 @@ header img {
 .navbar {
     /* text-decoration: underline; */
     font-size: 16px;
+    flex-basis: 100px;
 }
