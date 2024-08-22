@@ -27,12 +27,18 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header {
     margin: 69px 0 0 10px;
-    display: flex;
     background-color: black;
     position: fixed;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 header img {
