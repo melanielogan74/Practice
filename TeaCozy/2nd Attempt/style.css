@@ -18,11 +18,11 @@ body {
 
 a {
     color: seashell;
+    text-decoration: none;
     
 }
 
 h1, h2, h3, h4, h5 {
-    color: yellow;
     text-align: center;
     font-weight: bold;
 }
@@ -51,11 +51,9 @@ header img {
 .navbar {
     border:1px solid red;
     text-decoration: underline;
-    text-decoration-color: yellow;
     font-size: 16px;
+    flex-grow: 1;
+    text-align: right;
     
 }
 
-main {
-  text-decoration: dash;
-}
