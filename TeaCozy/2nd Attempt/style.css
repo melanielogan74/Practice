@@ -34,12 +34,12 @@ h1, h2, h3, h4, h5 {
 
 header {
     margin: 69px 0 0 10px;
-    
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
     background-color: black;
+    position: fixed;
+    /* justify-content: center;
+    align-items: center; */
+    z-index: 1;
+    
 }
 
 header img {
