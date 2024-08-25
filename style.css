@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5 {
 .container {
   display: flex;
   flex-wrap: wrap;
+  
 }
 
 /* HEADER SECTION */
@@ -49,9 +50,10 @@ header {
   position: fixed;
   height: 69px;
   width: 1200px;
+  opacity: 75%;
   justify-content: center;
   align-items: center;
-  z-index: 1; 
+
   background-color: black;
   border: 3px solid hotpink; 
 }
@@ -95,27 +97,30 @@ nav a {
 /* Width and height are used to size the background-image. Background-repeat is set to no-repeat to prevent the image from repeating if screen resized */
 
 #mission {
-  padding-top: 325px;
-  width: 1200px;
+  margin-top: 80px;
+  width:1200px;
   height: 700px;
   background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
   background-repeat: no-repeat;
+  border: 5px dashed orange;
 } 
 
 /* Background-color is used to give a background to the banner text.  Text-align centers the text.  Padding gives some spacing above the first header and below the second header.  The line-height gives spacing between each header */
 
 .mission-banner {
+  margin-top: 300px;
+  width: 1200px;
   background-color: black;
   text-align: center;
-  padding: 20px 0;
   line-height: 1.5;
-}
+  
+} 
 
 
-/* FEATURED SECTION */
+ /* FEATURED SECTION */
 
 /* Width used to ensure banner is the width of the web page. Text-align centers the text for the headers.  Justify-content and align-items are used to horizonally and vertically align the banner.  Padding is used  to  */
-
+/*
 .featured-banner {
   width: 100%;
   text-align: center;
@@ -127,4 +132,4 @@ nav a {
 
 .featured-items {
   
-}
+} */
