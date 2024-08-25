@@ -1,0 +1,24 @@
+/* Reset CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Universal Section
+body {
+  background-color: black;
+}
+
+
+/* Flexbox Parent */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav {
+  
+}
