@@ -6,19 +6,63 @@
 }
 
 
-/* Universal Section
+/* Universal Section */
+
 body {
   background-color: black;
+  color: seashell;
 }
 
 
-/* Flexbox Parent */
+/* Flexbox Parent (container) */
+
+/* Adding display: flex activates the use of flextbox and creates the container */
+
+/* Flex-wrap: wrap means that when the screen is shrunk to a certain degree, the contents (links, images, etc.) will continue on the next line */
+
+/* Border is used to help see the parent container. Position is used to keep the header in place when page is scrolled */
+
+/* Adding justify-content:center helps to center the content when the screen is shrunk*
+
+/* Align-items: center is used to align the logo and the links on the cross axis */
 
 header {
   display: flex;
   flex-wrap: wrap;
+  border: 3px solid hotpink;
+  position: flxed;
+  justify-content: center;
+  align-items: center;
 }
 
+
+/* Flexbox Child (item) */
+
+/* Width and height is used to proportion the logo */
+
+/* Margin-left is used to push the logo to the left so that it is not at the far left of the webpage */
+
+header img {
+  width: 130px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+/* The navigation links are grouped together. The border is used to show the boundaries */
+
+/* Margin-left: auto is used to push the navigation links to the far right*/
+
+/* Margin-right: 10px keeps the navigation from being pushed to far to the right end of the webpage */
+
 nav {
-  
+  border: 3px dotted green;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+/* Color is used to select the font color of the links. Padding is used to put space between the links */
+
+nav a {
+  color: yellow;
+  padding: 10px;
 }
