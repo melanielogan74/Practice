@@ -1,4 +1,4 @@
-/* Reset CSS */
+/* RESET CSS */
 
 * {
   margin: 0;
@@ -6,10 +6,15 @@
 }
 
 
-/* Universal Section */
+/* UNIVERSAL SECTION */
 
 body {
   background-color: black;
+  font-family: Helvetica, sans-serif;
+  color: seashell;
+}
+
+h1, h2, h3, h4, h5 {
   color: seashell;
 }
 
@@ -20,19 +25,35 @@ body {
 
 /* Flex-wrap: wrap means that when the screen is shrunk to a certain degree, the contents (links, images, etc.) will continue on the next line */
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* HEADER SECTION */
+
+/* Height and width are used to size the header area */
+
 /* Border is used to help see the parent container. Position is used to keep the header in place when page is scrolled */
 
 /* Adding justify-content:center helps to center the content when the screen is shrunk*
 
 /* Align-items: center is used to align the logo and the links on the cross axis */
 
+/* Background color is to isolate the header area since it is fixed. Z-index: 1 is to keep the header above the rest of the web page */
+
+ 
 header {
-  display: flex;
-  flex-wrap: wrap;
-  border: 3px solid hotpink;
-  position: flxed;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 69px;
+  width: 1200px;
   justify-content: center;
   align-items: center;
+  z-index: 1; 
+  background-color: black;
+  border: 3px solid hotpink; 
 }
 
 
@@ -65,4 +86,45 @@ nav {
 nav a {
   color: yellow;
   padding: 10px;
+}
+
+/* MISSION SECTION */
+
+/* Padding-top is used to move the mission banner/text to the center of the image */
+
+/* Width and height are used to size the background-image. Background-repeat is set to no-repeat to prevent the image from repeating if screen resized */
+
+#mission {
+  padding-top: 325px;
+  width: 1200px;
+  height: 700px;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-repeat: no-repeat;
+} 
+
+/* Background-color is used to give a background to the banner text.  Text-align centers the text.  Padding gives some spacing above the first header and below the second header.  The line-height gives spacing between each header */
+
+.mission-banner {
+  background-color: black;
+  text-align: center;
+  padding: 20px 0;
+  line-height: 1.5;
+}
+
+
+/* FEATURED SECTION */
+
+/* Width used to ensure banner is the width of the web page. Text-align centers the text for the headers.  Justify-content and align-items are used to horizonally and vertically align the banner.  Padding is used  to  */
+
+.featured-banner {
+  width: 100%;
+  text-align: center;
+  border: 3px solid hotpink;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.featured-items {
+  
 }
