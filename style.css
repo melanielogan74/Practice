@@ -48,11 +48,10 @@ header {
   left: 0;
   position: fixed;
   height: 69px;
-  width: 100%;
+  
   opacity: 75%;
   justify-content: center;
   align-items: center;
-
   background-color: black;
   border: 3px solid hotpink; 
 }
