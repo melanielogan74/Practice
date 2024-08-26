@@ -88,12 +88,13 @@ nav a {
   padding: 10px;
 }
 
-/* MISSION SECTION */
 
-/* Padding-top is used to move the mission banner/text to the center of the image */
+ /* MISSION SECTION */
 
-/* Width and height are used to size the background-image. Background-repeat is set to no-repeat to prevent the image from repeating if screen resized */
+ /* Padding-top is used to move the mission banner/text to the center of the image */
 
+ /* Width and height are used to size the background-image. Background-repeat is set to no-repeat to prevent the image from repeating if screen resized */
+/*
 #mission {
   margin-top: 80px;
   width:1200px;
@@ -102,9 +103,9 @@ nav a {
   background-repeat: no-repeat;
   border: 5px dashed orange;
 } 
-
-/* Background-color is used to give a background to the banner text.  Text-align centers the text.  Padding gives some spacing above the first header and below the second header.  The line-height gives spacing between each header */
-
+*/
+   /* Background-color is used to give a background to the banner text.  Text-align centers the text.  Padding gives some spacing above the first header and below the second header.  The line-height gives spacing between each header */
+/*
 .mission-banner {
   margin-top: 300px;
   width: 1200px;
@@ -112,7 +113,7 @@ nav a {
   text-align: center;
   line-height: 1.5;
   
-} 
+} */
 
 
  /* FEATURED SECTION */
