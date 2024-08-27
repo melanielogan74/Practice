@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -48,8 +49,7 @@ header {
   left: 0;
   position: fixed;
   height: 69px;
-  width: 100%
-  opacity: 75%;
+  width: 99.5%;
   justify-content: center;
   align-items: center;
   background-color: black;
@@ -66,7 +66,7 @@ header {
 header img {
   width: 130px;
   height: 50px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 /* The navigation links are grouped together. The border is used to show the boundaries */
@@ -78,7 +78,7 @@ header img {
 nav {
   border: 3px dotted green;
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 /* Color is used to select the font color of the links. Padding is used to put space between the links */
