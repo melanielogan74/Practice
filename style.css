@@ -1,4 +1,4 @@
-/* RESET CSS */
+/* --------- RESET CSS -------- */
 /* setting margin and padding to 0 will start the page in the top upper left corner.  
    This reset will clear out anything that the browser automatically sets */
 
@@ -11,7 +11,7 @@
 }
 
 
-/* UNIVERSAL SECTION */
+/* -------- UNIVERSAL SECTION -------- */
 
 /* This section is used to set default values that can be used for any part of the web page */
 
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5 {
   flex-wrap: wrap;
 }
 
-/* HEADER SECTION */
+/* -------- HEADER SECTION -------- */
 
 /* position: fixed is used to keep the header in place and on top even when the page is scrolled.  top: 0 and left: 0 are used to position
    the element in the top left position of the page.  With position: fixed or position: absolution, it is recommented to include top, left,
@@ -65,80 +65,102 @@ header {
   justify-content: center;
   align-items: center;
   background-color: black;
-  border: 3px solid hotpink; 
+  border: 4px solid hotpink; 
 }
 
 
 /* Flexbox Child (item) */
 
-/* Width and height is used to size the logo. Margin-left is used to push the logo to the left so that it is not at the far left of the webpage */
+/* Width and height is used to size the logo. Margin-left is used to push the logo to the left so that it is not at the far left of the webpage. */
+   
+/* ---The border is used to show the boundaries of this child within the parent container--- */
 
 header img {
   width: 157px;
   height: 50px;
   margin-left: 20px;
+  border: 3px dotted lightgreen;
 }
 
-/* The navigation links are grouped together. The border is used to show the boundaries */
+/* The navigation links are grouped together. Margin-left: auto is used to push the navigation links to the far right./* Margin-right: 20px keeps 
+   the navigation from being pushed to far to the right end of the webpage */
 
-/* Margin-left: auto is used to push the navigation links to the far right */
-
-/* Margin-right: 10px keeps the navigation from being pushed to far to the right end of the webpage */
+/* ---The border is used to show the boundaries of this child within the parent container--- */
 
 nav {
-  border: 3px dotted lightgreen;
   margin-left: auto;
   margin-right: 20px;
+  border: 3px dotted lightgreen;
 }
 
-/* Color is used to select the font color of the links. Padding is used to put space between the links */
+/* Color is used for the font color of the links instead of the default blue given by the browser. Padding is used to put space between the links */
 
 nav a {
-  color: yellow;
+  color: seashell;
   padding: 10px;
 }
 
+ /* -------- MISSION SECTION -------- */
 
- /* MISSION SECTION */
+ /* Margin-top is used to ensure the section starts right after the header section. */ 
 
- /* Padding-top is used to move the mission banner/text to the center of the image */
+ /* Width: 100% ensures the width of the image fills the container.  Height: 700px is used to set the background-image height. */
+ 
+ /* Background-image is set to the url of the image to use.  Background-size: cover ensures the image will fill the container and not overflow 
+    or be too small when the screen is resized.  Background-repeat is set to no-repeat to prevent the image from repeating if screen resized */
 
- /* Width and height are used to size the background-image. Background-repeat is set to no-repeat to prevent the image from repeating if screen resized */
-/*
+ /* ---Border is used to show the boundaries of this child element --- */
+
 #mission {
-  margin-top: 80px;
-  width:1200px;
+  margin-top: 70px;
+  width: 100%;
   height: 700px;
   background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  border: 5px dashed orange;
+  border: 4px solid yellow;
 } 
-*/
-   /* Background-color is used to give a background to the banner text.  Text-align centers the text.  Padding gives some spacing above the first header and below the second header.  The line-height gives spacing between each header */
-/*
+
+/* Margin-top: 325px starts the banner at 325 pixels down from the top of the mission container. Width: 100% ensures that 
+   the banner will be the width of the screen regardless of resizing. */
+
+/* Background-color is used to give a background to the banner text of visibility on the image. Text-align centers the text. The line-height 
+   gives spacing between each header (don't use px for this) */
+
 .mission-banner {
-  margin-top: 300px;
-  width: 1200px;
+  margin-top: 325px;
+  width: 100%;
   background-color: black;
   text-align: center;
   line-height: 1.5;
+}
+
+ /* -------- FEATURED SECTION -------- */
+
+/* Width used to ensure banner is the width of the web page. Text-align centers the text for the headers.  Justify-content and align-items are 
+   used to horizonally and vertically align the banner.  Padding is used  to  */
+
+#featured {
+  font-weight:bold;
+  border: 4px solid orange;
   
-} */
+ }
 
-
- /* FEATURED SECTION */
-
-/* Width used to ensure banner is the width of the web page. Text-align centers the text for the headers.  Justify-content and align-items are used to horizonally and vertically align the banner.  Padding is used  to  */
-/*
 .featured-banner {
   width: 100%;
   text-align: center;
-  border: 3px solid hotpink;
-  justify-content: center;
-  align-items: center;
   padding: 20px 0;
 }
 
-.featured-items {
+.items img {
+  display: block;
+  width: 300px;
+  height: 200px;
   
-} */
+} 
+.items span {
+display: block;
+text-align: center; 
+}
+
+
