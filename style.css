@@ -71,9 +71,7 @@ header {
 
 /* Flexbox Child (item) */
 
-/* Width and height is used to size the logo */
-
-/* Margin-left is used to push the logo to the left so that it is not at the far left of the webpage */
+/* Width and height is used to size the logo. Margin-left is used to push the logo to the left so that it is not at the far left of the webpage */
 
 header img {
   width: 157px;
@@ -88,7 +86,7 @@ header img {
 /* Margin-right: 10px keeps the navigation from being pushed to far to the right end of the webpage */
 
 nav {
-  border: 3px dotted green;
+  border: 3px dotted lightgreen;
   margin-left: auto;
   margin-right: 20px;
 }
