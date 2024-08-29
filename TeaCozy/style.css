@@ -1,156 +1,241 @@
-/* Universal Section */
+/* --------- RESET CSS -------- */
+/* setting margin and padding to 0 will start the page in the top upper left corner.  
+   This reset will clear out anything that the browser automatically sets */
+
+   /* box-sizing: border-box tells the browser to include padding and borders in the width and height values specified for an element.
+      This helps to make sure the top, bottom, left, and right, edges of an element or container are in view and not cut off */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* -------- UNIVERSAL SECTION -------- */
+
+/* This section is used to set default values that can be used for any part of the web page */
 
 body {
-    margin: 0;
-    font-family: Helvetica, sans-serif;
-    font-size: 22px;
-    color: seashell;
-    background-color: black;
-    opacity: 0.9;
-    text-align: center;
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+  color: seashell;
 }
 
-a {
-    color: seashell;
+h1, h2, h3, h4, h5 {
+  color: seashell;
 }
 
-h1, h2, h3, h4 {
-    margin:0;
-    padding: 10px;
-}
+
+/* Flexbox Parent (container) */
+
+/* Adding display: flex activates the use of flextbox and creates the container */
+
+/* Flex-wrap: wrap means that when the screen is shrunk to a certain degree, the contents (links, images, etc.) will continue on the next line */
+
+/* Adding justify-content:center centers the element on the main axis (horizontal). This keeps the content centered horizontally
+   regardless of whether the page grows or shrinks. adjust-items: center centers the element on the cross axis (vertical).  
+   This keeps the content centered vertically regardless of whether the page grows or shrinks.  Using these together ensures the
+   element is centered left to right and top to bottom.  These properties apply to: header, mission */
 
 .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------- HEADER SECTION -------- */
+
+/* position: fixed is used to keep the header in place and on top even when the page is scrolled.  top: 0 and left: 0 are used to position
+   the element in the top left position of the page.  With position: fixed or position: absolution, it is recommented to include top, left,
+   right, and/or bottom properties to the ruleset. */
+
+/* Height: 69px makes the header 69 pixels tall.  Width is sized to 100% so that regardless of whether the page is grows or shrunk, 
+   the header will be as wide as the page view.  box-sizing: border-box in the RESET section helps to make sure the height and width aren't
+   cut off */
+
+/* Background color is to isolate the header area since it is fixed. Z-index: 1 is to keep the header above the rest of the web page */
+
+header {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  height: 69px;
+  width: 100%;
+  background-color: black;
+  border-bottom: 1px solid seashell;
 }
 
 
-/* Header Section */
+/* Flexbox Child (item) */
 
- header {
-    width: 100%;
-    /*padding: 69px 0 0 0; */
-    border-bottom: 1px solid seashell;
-    position: fixed;
-    z-index: 1;
-    align-items: center;
-    background-color: black;
-   
- }
+/* Width and height is used to size the logo. Margin-left is used to push the logo to the left so that it is not at the far left of the webpage. */
 
- header img {
-    height: 50px;
-    padding: 0 0 0 10px;
- }
+header img {
+  width: 157px;
+  height: 50px;
+  margin-left: 20px;
+}
 
- nav {
-    text-align: right;
-    flex-grow: 1;
- }
+/* The navigation links are grouped together. Margin-left: auto is used to push the navigation links to the far right./* Margin-right: 20px keeps 
+   the navigation from being pushed to far to the right end of the webpage */
 
- nav a {
-    text-decoration: underline;
-    padding: 0 25px 0 25px;
- }
+/* ---The border is used to show the boundaries of this child within the parent container--- */
 
+nav {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+/* Color is used for the font color of the links instead of the default blue given by the browser. Padding is used to put space between the links */
+
+nav a {
+  color: seashell;
+  padding: 10px;
+}
+
+ /* -------- MISSION SECTION -------- */
+
+ /* Margin-top is used to ensure the section starts right after the header section and allows room for readability. */ 
+
+ /* Width: 100% ensures the width of the image fills the container.  Height: 700px is used to set the background-image height. */
  
- /* Main Section */
- main {
-    padding-top: 69px;
-    width: 1200px;
-    margin: auto;
- }
- 
- 
- /* Mission Section */
+ /* Background-image is set to the url of the image to use.  Background-size: cover ensures the image will fill the container and not overflow 
+    or be too small when the screen is resized.  Background-repeat is set to no-repeat to prevent the image from repeating if screen resized */
 
- #mission {
-    height: 700px;
-    padding-top: 70px;
-    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
- }
+#mission {
+  margin-top: 70px;
+  /* width: 1200px;  "Uncomment this to make it the width of the actual specs */
+  width: 100%;
+  height: 700px;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
 
- #mission .content {
-    margin: auto;
-    width: 100%;
-    background-color: black;
- }
+/* Margin-top: 325px starts the banner at 325 pixels down from the top of the mission container. Width: 100% ensures that 
+   the banner will be the width of the screen regardless of resizing. */
 
- /* Featured Section */
+/* Background-color is used to give a background to the banner text of visibility on the image. Text-align centers the text. The line-height 
+   gives spacing between each header (don't use px for this) */
 
- #featured {
-    height: 700px;
-    width: 1000px;
-    padding-top: 69px;
-    margin: auto;
- }
+.mission-banner {
+  margin-top: 325px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  line-height: 1.5;
+}
 
- .item {
-    padding: 5px;
- }
+ /* -------- FEATURED SECTION -------- */
 
- .item img {
-    height: 200px;
-    width:300px;
-    margin: 10px;
-    display: block;
- }
+/* Height added to be sure content has room.  The text font is bolded.  Padding is used to give a 70 pixel buffer 
+   above and below the content. */
 
- .item span {
-   display: block; 
-   text-align: center;
-    padding: 5px;
- }
+#featured {
+  height: 100%;
+  font-weight:bold;
+  padding: 70px 0 0 0;
+}
 
- 
+/* Width used to ensure banner is the width of the web page. Text-align centers the text for the headers. Line-height is used to give some
+   spacing between the text lines. */
 
-/* Location Section (solution */
+.featured-banner {
+  width: 100%;
+  text-align: center;
+  line-height: 1.5;
+}
 
-.flex-container.locations {
-   padding-top: 5px;
- }
- 
- #locations {
-   background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
-   height: 500px;
-   padding-top: 69px; 
- }
- 
- #locations .flex-container {
-   margin: auto;
-   width: 1100px;
- }
- 
- .store-location {
-   opacity: 1;
-   padding: 10px;
-   margin: 5px 20px;
-   background-color: black;
-   flex-basis: 280px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center; 
- }
- 
+/* This gives a buffer of 40 pixels above and below the row of items and 20 pixels to the left and right of the items.  The left/right margin
+   is what creates the space between the items. */
+
+.items {
+ margin: 40px 20px;
+}
+
+/* Display: block helps put the image in a row. This property will start the element on a new line and take up the full width available by 
+   default. This means that other elements will be pushed down or up to make room for it. The width and height are used to size the image. */
+
+.items img {
+  display: block;
+  width: 300px;
+  height: 200px;
+} 
+
+/* Display: block helps put the text in a row with the images. This property will start the element on a new line and take up the full width  
+   available by default. This means that other elements will be pushed down or up to make room for it. The text is centered via text-align.  
+   Padding is used to put space between the image and the text */
+
+.items span {
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+} 
+
+/* -------- LOCATION SECTION -------- */
+
+/* Padding ensures the section starts right after the previous section and allows room for readability. Height added to ensure locations  
+   have room to fit in the content . Background-image is the picture for the background.  Background-size: cover ensures the image will fill
+   the space.  Background-repeat: no-repeat keeps the image from repeating when resized. Background-position: center positions the image
+   so that the center-most part of the image is shown  */
+
+#locations{
+  padding: 70px;
+  height: 100%;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Center the text */
+
+#locations h2 {
+  text-align: center;
+}
+
+/* This removes the bullet points from the unordered list item */
+
+.store-locations li {
+  list-style-type: none;
+}
+
+/*  Width and height are used to size the black background box (i.e. background-color: black) sections.  Margin gives space above 
+    and below the black boxes and right/left space in between the boxes. Text-align centers the text. The line-height makes room
+    so that the text is readable. Padding centers the text in the black background box. */
+
+.store {
+  width: 300px;
+  height: 300px;
+  background-color: black;
+  margin: 40px 40px;
+  text-align: center;
+  line-height: 3;
+  padding: 50px 0;
+}
 
 
- /* Contact Section */
+/* -------- CONTACT SECTION -------- */
 
- .contact {
-    height: 200px;
-    text-align: center;
-    font-size: 20px;
-    padding-top: 69px;
- }
+/* Padding centers the content top/bottom.  The contact area is 200 pixels high.  Text-align centers the text.
+   Font-weight makes the text bold. Line-height set to 2 to give some space between each line. */
 
- /* Footer Section */
+.contact {
+  padding: 45px 0;
+  height: 200px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2;
+}
 
- footer {
-    margin: 20px;
-    font-size: 18px;
- }
+/* -------- FOOTER SECTION -------- */
 
- footer p {
-   text-align: left;
- }
+/* Padding is use to give space around the text from top/bottom and left/right.  Font weight and size are used to style the text.  
+   Text-align makes sure the text sticks to the left of the page */
+footer {
+  padding: 10px 10px;
+  font-weight:bold;
+  font-size:small;
+  text-align: left;
+}
