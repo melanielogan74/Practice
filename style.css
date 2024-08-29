@@ -158,9 +158,10 @@ nav a {
   height: 200px;
   
 } 
+
 .items span {
-display: block;
-text-align: center; 
+  display: block;
+  text-align: center; 
 }
 
 
