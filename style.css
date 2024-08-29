@@ -34,6 +34,7 @@ h1, h2, h3, h4, h5 {
 
 .container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -157,11 +158,13 @@ nav a {
   width: 300px;
   height: 200px;
   
+
 } 
 
 .items span {
   display: block;
-  text-align: center; 
-}
+  text-align: center;
+  width: 150px;
+} 
 
 
