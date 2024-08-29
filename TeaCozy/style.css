@@ -1,5 +1,9 @@
 /* --------- RESET CSS -------- */
+<<<<<<< HEAD
 /* setting margin and padding to 0 will start the page in the top upper left corner.  
+=======
+/* Setting margin and padding to 0 will start the page in the top upper left corner.  
+>>>>>>> 7c12e19859df1765e969dd2aed063d85add237ba
    This reset will clear out anything that the browser automatically sets */
 
    /* box-sizing: border-box tells the browser to include padding and borders in the width and height values specified for an element.
@@ -54,7 +58,7 @@ h1, h2, h3, h4, h5 {
    the header will be as wide as the page view.  box-sizing: border-box in the RESET section helps to make sure the height and width aren't
    cut off */
 
-/* Background color is to isolate the header area since it is fixed. Z-index: 1 is to keep the header above the rest of the web page */
+/* Background color is to isolate the header area since it is fixed. Z-index: 1 is to keep the header above the rest of the web page  */
 
 header {
   position: fixed; 
@@ -67,7 +71,7 @@ header {
 }
 
 
-/* Flexbox Child (item) */
+/* Flexbox Child (item) */ 
 
 /* Width and height is used to size the logo. Margin-left is used to push the logo to the left so that it is not at the far left of the webpage. */
 
